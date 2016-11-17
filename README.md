@@ -3,6 +3,7 @@ The new site for the H&A Automotive replacement.  The site is now EpicAutoCenter
 
 ## Setup
     npm i
+    bower install
     grunt serve
     
 ## Build
