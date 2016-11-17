@@ -1,16 +1,25 @@
 {
-  "name": "ha",
+  "name": "epicauto",
   "private": true,
   "dependencies": {
-    "sass-bootstrap": "~3.0.0",
-    "modernizr": "~2.6.2",
+    "history.js": "~1.8.0",
     "jquery": "~1.10.2",
-    "skrollr": "~0.6.21",
     "lodash": "~2.4.1",
-    "history.js": "~1.8.0"
+    "modernizr": "~2.6.2",
+    "sass-bootstrap": "~3.0.0",
+    "skrollr": "~0.6.21"
   },
   "devDependencies": {},
   "resolutions": {
     "jquery": "~1.10.2"
-  }
+  },
+  "version": "1.0.0",
+  "description": "epicautocenter.com website",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/tony99nyr/epicauto.git",
+    "type": "git"
+  },
+  "author": "tony99nyr <tony@iamrossi.com>",
+  "license": "MIT"
 }

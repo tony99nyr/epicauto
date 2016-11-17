@@ -1,5 +1,5 @@
-#  H & A Automotive
-A site I made in 2014 for a friend's automotive business which no longer exists.
+#  EpicAutoCenter
+The new site for the H&A Automotive replacement.  The site is now EpicAutoCenter.com
 
 ## Setup
     npm i
