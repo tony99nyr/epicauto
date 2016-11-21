@@ -1,6 +1,2 @@
--facebook link
 -yelp link
--google maps
 -google plus
--phone number
--email address

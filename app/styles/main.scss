@@ -3,10 +3,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 
 @mixin ease-in($length) {
-  -webkit-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-   -moz-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-    -ms-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000); 
-     -o-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000); 
+  -webkit-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000);
+   -moz-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000);
+    -ms-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000);
+     -o-transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000);
         transition: all $length cubic-bezier(0.420, 0.000, 1.000, 1.000);
 }
 
@@ -27,14 +27,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 }
 
 a{
-    color: #DBA825;
+    color: #CF0D11;
 
     &:hover{
-        color: #B4770B;
+        color: darken(#CF0D11, 10);
     }
 
     &:active{
-        color: #F7B202;
+        color: lighten(#CF0D11, 5);
     }
 }
 
@@ -69,14 +69,10 @@ ul.nav.navbar-nav{
     height: 30px;
 }
 
-#homeLink{
-    padding: 5px;
-}
-
 .appcontent{
     margin-top: 80px;
     width: 100%;
-    background-color: #4d4d4d;
+    background-color: #e3e3e3;
 }
 
 .skroller-div{
@@ -148,25 +144,25 @@ ul.nav.navbar-nav{
 }
 
 
-.orange{
+.telephone{
     font-family: 'Helvetica Neue',Helvetica, sans-serif;
     line-height: 1em;
-    color: orange;
+    color: lighten(red, 15);
     font-size: 15px;
+    margin: 2px
 }
 
 #phoneNumberContainer{
     display: inline-block;
     position: absolute;
-    right: 0px;
+    right: 22px;
     width: 400px;
-    bottom: 0px;
+    bottom: 3px;
 
     p{
         text-align: right;
         margin: 0;
-        padding-right: 3px;
-        font-size: 12px;
+        padding-right: 40px;
     }
 }
 
@@ -197,53 +193,46 @@ hr{
     border-top: 1px solid #C0C0C0;
 }
 
-#social-fixed{
 
-    display:none;
-    
-    ul.social{
-        position: fixed;
-        right: 3px;
-        top: 83px;
-        z-index: 50000;
-        line-height: 1.5em;
-        margin: 0;
-        margin-left: 1px;
-        opacity: .7;
-        transition: all 100ms cubic-bezier(0.42, 0, 1, 1);
-        padding: 0px;
 
-        &:hover{
-                @include ease-in(100ms);
-                opacity: 1;
-        }
+.social{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    line-height: 1.5em;
+    margin: 0;
+    margin-left: 1px;
+    opacity: .7;
+    transition: opacity 100ms cubic-bezier(0.42, 0, 1, 1);
+    padding: 0px;
 
-        li{
-            margin-bottom: 1px;
-            list-style: none;
-        }
-
-        a.i-social{
-            display: block;
-            height: 30px;
-            width: 30px;
-            background: url('../images/icons.png') no-repeat 0 0;
-        }
-
-        a.i-social-facebook{
-            background-position: -32px 0px;
+    &:hover{
             @include ease-in(100ms);
-            &:hover{
-                background-position: 0px 0px;
-                margin-left: 5px;
-                @include ease-in(100ms);
-            }
-        }
+            opacity: 1;
+    }
 
+    li{
+        margin-bottom: 1px;
+        list-style: none;
+    }
+
+    a.i-social{
+        display: block;
+        height: 30px;
+        width: 30px;
+        background: url('../images/icons.png') no-repeat 0 0;
+    }
+
+    a.i-social-facebook{
+        @include ease-in(100ms);
+        &:hover{
+            background-position: 0px 0px;
+            margin-left: 5px;
+            @include ease-in(100ms);
+        }
     }
 
 }
-
 
 
 .show-when-small{
@@ -269,9 +258,9 @@ hr{
     }
 
     h1{
-        font-size:48px; 
+        font-size:48px;
         margin-top:20px;
-        margin-bottom:10px;      
+        margin-bottom:10px;
     }
 
     p, li{
@@ -282,11 +271,11 @@ hr{
         padding-bottom: 30px;
         padding-top: 15px;
     }
-    
+
 }
 
 @media (min-height: 500px){
-    
+
     ul.nav.navbar-nav{
         margin-top: 14px;
         font-size: 16px;
@@ -297,7 +286,7 @@ hr{
     }
 
     #phoneNumberContainer p{
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .navbar-toggle{
@@ -308,12 +297,12 @@ hr{
 
 @media (max-height: 500px){
     h1{
-        font-size:24px; 
-        margin:0;      
+        font-size:24px;
+        margin:0;
     }
 
      h2{
-        font-size:20px;      
+        font-size:20px;
     }
 
     .navbar{
@@ -329,7 +318,7 @@ hr{
         padding-top: 5px;
     }
 
-    
+
     p{
         font-size: 12px;
         margin-bottom: 6px;
