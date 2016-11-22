@@ -268,10 +268,12 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
+                        'manifest.json',
                         'images/{,*/}*.{gif,jpeg,jpg,png,webp}',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'bower_components/sass-bootstrap/fonts/*.*'
+                        'bower_components/sass-bootstrap/fonts/*.*',
+                        'bower_components/modernizr/modernizr.js'
                     ]
                 }]
             },
